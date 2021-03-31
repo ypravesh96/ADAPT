@@ -1,0 +1,18 @@
+class Rectangle {
+    constructor(width, height) {
+      this.height = height;
+      this.width = width;
+    }
+    
+    getArea() {
+      return this.height * this.width;
+    }
+    
+  }
+  
+  let r = new Rectangle(4, 5);
+  r.height = 50;
+  console.log(r.getArea());
+
+
+Answer is 200 becaues we hare changing height property 5 to 50 ..

@@ -1,0 +1,16 @@
+class Rectangle {
+    constructor(height, width) {
+      this.height = height;
+      this.width = width;
+    }
+    
+  }
+  
+  let obj = new Rectangle(20,5);
+  
+  console.log(obj.height); 
+  console.log(obj.width); 
+  obj.height=50;
+  obj.width=20;
+  console.log(obj.height); 
+  console.log(obj.width); 
