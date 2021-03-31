@@ -1,0 +1,20 @@
+function square(x)
+{
+    return x*x;
+}
+function sqrt(x)
+{
+    return Math.sqrt(x);
+}
+let arr1=[1,2,3,4,5];
+let arr2=[1,4,9,16,25]
+function map(arr1,square)
+{
+    for(var i=0;i<arr1.length;i++)
+    { var j=0;
+        
+        arr1.push(square(arr1[j]));
+        arr1.shift();
+    }
+    console.log(arr1);
+}

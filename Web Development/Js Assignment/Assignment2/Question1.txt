@@ -1,0 +1,24 @@
+function isEven(num)
+{
+    if(num%2==0)
+    {
+       return true
+    }
+    else
+    return false;
+}
+
+function find(arr,isEven)
+
+{
+    if(arr.length==1)
+    {
+        return;
+    }
+    if(isEven(arr[0]))
+    {
+        console.log(arr[0]);
+       
+    }
+    find(arr.slice(1,arr.length-1),isEven);
+}
