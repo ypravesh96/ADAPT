@@ -1,0 +1,6 @@
+
+Name="Pravesh Yadav";
+ problem="Hard disk is not working";
+ desk_no=527;
+ problem_register_date="7th march";
+ console.log('Hii My name is' +(Name)+ '\nmy desk number is '+ desk_no +'.\n I am facing '+ problem +' in my laptop.\n Ihave register my problem on '+ problem_register_date +'\n please resolve my problem as soon as possible

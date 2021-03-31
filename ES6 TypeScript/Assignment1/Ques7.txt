@@ -1,0 +1,18 @@
+
+
+var [first,second,third,fourth] = ["Angular","Java","ES6","React"];
+console.log(third);
+
+var Organization ={
+    name:"Pravesh",
+    address:[
+        {
+            hno:59,
+            city:"lucknow",
+            state:"UP",
+            pin:226016
+        }
+    ]
+}
+var {name,address:[{hno,city,state,pin}]}=Organization;
+console.log(pin);

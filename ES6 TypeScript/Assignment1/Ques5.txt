@@ -1,0 +1,18 @@
+// ----------------------default ----------------------
+ let add=(firstname="Pravesh",lastname="Yadav")=>{
+     console.log(firstname,lastname);
+ }
+ add();
+// ------------------------rest----------------------
+ function userFriend(user, ...friends) {
+    console.log(user);
+    console.log(friends); 
+  }
+ console.log(userFriend('Pravesh', 'Harshal', 'himanshu','dheeraj','Gyan') );
+--------------------------------spred------------------------
+ function printCapitalNames(...par){
+     console.log(par..toUpperCase());
+
+ }
+ friend=['Pravesh', 'Harshal', 'himanshu','dheeraj','Gyan']
+printCapitalNames(...friend)
