@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <!--  
+    <bean id="questions" class="capgeminiAssignments.Question">
+         <property name="ques">
+              <list>
+                 <ref bean="question1"/>
+                 <ref bean="question2"/>
+              </list>
+         </property>
+    </bean> -->
+    
+    <bean id="question1" class="capgeminiAssignments.Question">
+         <property name="questionId" value="1"/>
+         <property name="question" value="Name colors in rainbow?"/>
+         <property name="answers" value="VIBGYOR"/>
+    </bean>
+    
+    <bean id="question2" class="capgeminiAssignments.Question">
+         <property name="questionId" value="2"/>
+         <property name="question" value="What is 'G' in VIBGYOR?"/>
+         <property name="answers" value="Green"/>
+    </bean>
+
+</beans>
