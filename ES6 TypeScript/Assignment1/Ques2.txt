@@ -1,0 +1,11 @@
+function greetP(name)
+
+{
+    if(name === "Pravesh")
+    {
+       let greet="Hi Pravesh"
+    }
+    
+    console.log(greet);  // greet should not be accessible outside if function
+}
+greetP("Pravesh");

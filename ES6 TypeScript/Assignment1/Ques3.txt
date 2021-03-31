@@ -1,0 +1,17 @@
+let order={
+    id:101,
+    title:'Shoes',
+    price:5000,
+
+    printOrder(){
+      console.log(this.id);
+      console.log(this.title);
+    },
+    getPrice(){
+        console.log(this.price);
+    }
+
+
+};
+let AssignedOrder=Object.assign({},order);
+console.log(AssignedOrder);

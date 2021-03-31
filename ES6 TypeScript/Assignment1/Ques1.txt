@@ -1,0 +1,8 @@
+
+const a = 5;
+var b=6;
+b=b+a;
+a=a+b;   // we cant change value of a once it is assign
+console.log(a);
+
+
