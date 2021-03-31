@@ -1,0 +1,126 @@
+html, body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    color: white;
+	font: inherit;
+	vertical-align: baseline;
+}
+.indexheader{
+    background-color: rgb(68, 68, 73);
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    align-items: center;
+
+}
+.indexheader h1{
+    text-align: justify;
+    margin: 20px 20px;
+   
+    color: mediumseagreen;
+}
+.indexheader h3{
+    text-align: right;
+    margin-right: 90px;
+   
+    color: rgb(236, 86, 169);
+}
+.indexheader .menu{
+    width: 700px;
+    
+     float: right;
+    
+}
+.indexheader .menu ul li{
+    width: 120px;
+    color: white;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+.indexheader .menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(251, 252, 253);
+}
+.indexheader .menu ul a:hover{
+    background: grey;
+    padding: 10px;
+
+}
+.indexheader .sectionA h2{
+    font-family: sans-serif;
+    color: navajowhite;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    
+    margin-top: 140px;
+}
+.indexheader .sectionA p{
+    text-align: center;
+     margin-bottom: 30px;
+    font-size: 26px;
+}
+.sectionA form input[type="button"]{
+    background-color: black;
+    color: white;
+    padding: 10px ;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 90px;
+    text-align: center;
+    
+}
+.sectionB{
+    
+    width: 100%;
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    color: rgb(91, 94, 89);
+}
+.sectionB img{
+
+    border-radius: 6px;
+    height: 250px;
+    width: 250px;
+}
+.sectionB div{
+    width: 250px;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(79, 83, 74);
+}
+.footer .nav{
+    width: 700px;
+    float: right;
+
+}
+.footer .nav li{
+    width: 120px;
+
+    color: white;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+.footer small{
+    margin-top: 60px;
+    font-size: 20px;
+}
+.footer .nav li a{
+    margin-top: 50px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}

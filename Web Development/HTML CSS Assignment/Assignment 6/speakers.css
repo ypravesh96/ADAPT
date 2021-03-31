@@ -1,0 +1,123 @@
+html, body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    color: white;
+	font: inherit;
+	vertical-align: baseline;
+}
+.indexheader{
+    background-color: rgb(68, 68, 73);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+
+}
+.indexheader h1{
+
+    margin-top: 0px;
+    text-align: justify;
+    
+    font-weight: 500;
+    font-size: 45px;
+   
+    color: rgb(171, 220, 240);
+}
+.indexheader h3{
+    margin-top: 10pxS;
+    text-align: right;
+    margin-right: 90px;
+   
+    color: rgb(236, 86, 169);
+}
+.indexheader .menu{
+    width: 700px;
+    
+     float: right;
+    
+}
+.indexheader .menu ul li{
+    width: 120px;
+    color: white;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+.indexheader .menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(251, 252, 253);
+}
+.indexheader .menu ul a:hover{
+    background: grey;
+    padding: 10px;
+
+}
+.sectionB{
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(184, 154, 187);
+    width: 100%;
+    height: 240px;
+}
+.sectionB h1{
+    margin-top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(51, 48, 44);
+    
+}
+.sectionB p{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(22, 21, 20);
+    
+}
+.SectionC{
+    margin: 20px;
+    font-size: 16px;
+    color: darkslategray;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(3,1fr);
+    gap: 40px;
+
+}
+img{
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(79, 83, 74);
+}
+.footer .nav{
+    width: 700px;
+    float: right;
+
+}
+.footer .nav li{
+    width: 120px;
+
+    color: white;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+.footer small{
+    margin-top: 60px;
+    font-size: 20px;
+}
+.footer .nav li a{
+    margin-top: 50px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
