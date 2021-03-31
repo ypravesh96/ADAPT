@@ -1,0 +1,30 @@
+MongoDB Aggregation Assignment
+
+Atlanta population
+1. db.zipcodes.find({$and:[{city:"ATLANTA"},{state:"GA"}]})
+2. db.zipcodes.aggregate({$match:{$and:[{city:"ATLANTA"},{state:"GA"}]}})
+3.
+4.db.zipcodes.aggregate([{$match:{city:"ATLANTA"}},{$group:{_id:"$city",pop:{$sum:"$pop"}}}])
+
+POPULATION BY STATE
+
+1. db.zipcodes.aggregate([{$group:{_id:"$state",pop:{$sum:"$pop"}}}])
+2. db.zipcodes.aggregate([{$group:{_id:"$state",pop:{$sum:"$pop"}}},{$sort:{pop:1}}])
+3. db.zipcodes.aggregate([{$limit:3},{$group:{_id:"$state",pop:{$sum:"$pop"}}},{$sort:{pop:1}}])
+
+
+PPULATION BY CITY
+
+1. db.zipcodes.aggregate([{$group:{_id:"$city",pop:{$sum:"$pop"}}}])
+2. db.zipcodes.aggregate([{$group:{_id:"$city",pop:{$sum:"$pop"}}},{$sort:{pop:1}}])
+3. db.zipcodes.aggregate([{$limit:3},{$group:{_id:"$city",pop:{$sum:"$pop"}}},{$sort:{pop:1}}])
+4. db.zipcodes.aggregate([{$limit:3},{$match:{city:"TEXAS"}},{$group:{_id:"$city",pop:{$sum:"$pop"}}},{$sort:{pop:1}}])
+
+
+BONUS
+
+1. db.zipcodes.aggregate([{$group:{state:"$state",city:"$city"},pop:{$sum:"$pop"}},
+                           {$group:{_id:"$_id.state",avgCityPop:{$avg:"$pop"}}}])
+
+2.db.zipcodes.aggregate([{$limit:3},{$group:{state:"$state",city:"$city"},pop:{$sum:"$pop"}},
+                           {$group:{_id:"$_id.state",avgCityPop:{$avg:"$pop"}}}])
