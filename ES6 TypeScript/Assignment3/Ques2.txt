@@ -1,0 +1,37 @@
+class Account{
+    name: string;
+    id : number;
+    balance:number;
+
+    constructor( id : number,name: string,balance:number){
+        this.id=id;
+        this.name=name;
+        this.balance=balance;
+
+    }
+}
+class SavingAccount extends Account{
+    interest:number;
+
+    Totalbalance(){
+      console.log(this.balance += this.interest);
+       
+    }
+   
+}
+class CurrentAccount extends Account{
+
+    cash_credit:number;
+    Totalbalance(){
+        console.log(this.balance -= this.cash_credit);
+        
+    
+      }
+}
+const p1 = new SavingAccount(101,"Pravesh",50000);
+p1.interest=100;
+p1.Totalbalance();
+
+const p2 = new SavingAccount(101,"Pravesh",50000);
+p2.interest=100;
+p2.Totalbalance();

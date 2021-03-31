@@ -1,0 +1,44 @@
+interface printable{
+    name:string;
+    category:string;
+    id:number;
+}
+
+class circle implements printable{
+
+    name;
+    category;
+    id;
+    printall(name:string,category:string,id:number){
+        this.name=name;
+        this.category=category;
+        this.id=id;
+    }
+    print(){
+        console.log("Name :"+this.name+" Category :"+this.category+"id : "+this.id);
+        
+    }
+}
+class employee implements printable{
+
+    name;
+    category;
+    id;
+    printall(name:string,category:string,id:number){
+        this.name=name;
+        this.category=category;
+        this.id=id;
+    }
+    print(){
+        console.log("Name :"+this.name+" Category :"+this.category+"id : "+this.id);
+        
+    }
+
+}
+let c1=new circle();
+c1.printall("circle","Shape",101);
+c1.print();
+
+let emp=new employee();
+emp.printall("Pravesh","Person",102);
+emp.print();

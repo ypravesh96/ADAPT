@@ -1,0 +1,10 @@
+let a = Promise.resolve(10)
+
+let b = Promise.resolve(20)
+
+Promise.all([a,b]).then(values => {  
+ console.log(`Sum of ${values} is`);  
+ console.log(`${values[0] + values[1]}`);
+}).catch((message)=>{
+    console.log(`Error`);
+})
